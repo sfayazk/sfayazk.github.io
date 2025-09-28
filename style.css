@@ -171,6 +171,34 @@ a {
   font-size: 100px;
    color: #f5ee84;
 }
+
+/* Navbar link hover effect */
+nav ul li a {
+  position: relative;
+  color: #03045e; /* base text color */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #f5ee84; /* yellow underline */
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #474306; /* darker shade when hovering */
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* underline grows smoothly */
+}
+
 @media (max-width: 1200px) {
   .grid-container {
     grid-template-columns: 1fr;
