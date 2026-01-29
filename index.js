@@ -1,4 +1,4 @@
- new Swiper('.card-wrapper', {
+new Swiper('.card-wrapper', {
   loop: true,
   spaceBetween: 30,
 
@@ -15,25 +15,25 @@
     prevEl: '.swiper-button-prev',
   },
 
-  breakpoints:{
+  breakpoints: {
     0: {
-        slidesPerView: 1
+      slidesPerView: 1
     },
     768: {
-        slidesPerView: 2
+      slidesPerView: 2
     },
     1024: {
-        slidesPerView: 3
+      slidesPerView: 3
     },
   }
 });
 
-function showSidebar(){
+function showSidebar() {
   const sidebar = document.querySelector('.side-bar');
   sidebar.style.display = 'flex';
 }
 
-function hideSidebar(){
+function hideSidebar() {
   const sidebar = document.querySelector('.side-bar');
   sidebar.style.display = 'none';
 }
